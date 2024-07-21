@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>all articles are here!</h1>
+  <hr>
+  <% for( art of articles) { %>
+    <article style="background-color: rgba(76, 225, 245, 0.651); border-radius: 6px; padding: 10px; margin: 20px 0;">
+      <h2 style="text-align: center;">
+        <%=art.title %>
+      </h2>
+      <p>
+        <%=art.body %>
+      </p>
+    </article>
+    <% } %>
+
+</body>
+
+</html>
